@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  max-height: 50px;
+}
+header div {
+  display: flex;
+  align-items: center;
+}
+header a {
+  font-size: 13px !important;
+}
+header i {
+  font-size: 10px;
+}
+
+.banner {
+  background-image: url("../img/banner.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 100% !important;
+}
+.banner .card {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .card i {
+  font-size: 13px;
+}
+
+.productArea .productImages {
+  z-index: 2;
+}
+.productArea .productImages .primaryImage img {
+  width: 100%;
+  height: 550px;
+  transition: all 1.5s ease;
+}
+.productArea .productImages .primaryImage img:hover {
+  transform: scale(1.5);
+}
+.productArea .productImages .secondaryImages img {
+  width: 33%;
+  height: 150px;
+}
+.productArea .productImages .secondaryImages img:nth-child(1) {
+  border: 1px solid green;
+}
+.productArea .productImages .secondaryImages img:nth-child(2) {
+  border: 1px solid red;
+}
+.productArea .productImages .secondaryImages img:nth-child(3) {
+  border: 1px solid green;
+}
+.productArea .productsDetails .card .card-header .fa-star {
+  color: chocolate;
+  font-size: 16px;
+}/*# sourceMappingURL=style.css.map */
