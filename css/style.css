@@ -21,12 +21,17 @@ p, td, .lead {
   font-size: 14px;
 }
 
-.checked {
-  color: chocolate;
+.checked, .fa-star:hover {
+  color: chocolate !important;
+  cursor: pointer;
 }
 
 .checked-50 {
   color: rgba(210, 105, 30, 0.5);
+}
+
+.form-check-input {
+  cursor: pointer;
 }
 
 .socialMediaArea i {
@@ -46,13 +51,35 @@ header div {
   display: flex;
   align-items: center;
 }
-header a {
+header .hotlineNumber {
   font-size: 13px !important;
+}
+header .hotlineNumber:hover a {
+  color: brown !important;
 }
 header i {
   font-size: 10px;
 }
 
+nav .navbar-brand {
+  cursor: pointer;
+}
+nav .nav-link {
+  border-radius: 10px 0;
+}
+nav .nav-link:hover {
+  background-color: brown !important;
+  color: #fff !important;
+}
+nav form {
+  width: 40% !important;
+}
+
+@media (max-width: 1024px) {
+  nav form {
+    width: 100% !important;
+  }
+}
 .banner {
   background-image: url("../img/banner.jpg");
   background-position: bottom;

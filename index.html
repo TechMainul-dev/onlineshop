@@ -40,8 +40,8 @@
                         <li><a class="dropdown-item" href="#">TAKA</a></li>
                     </div>
                 </ul>
-                <div class="hotlineNumber px-3">
-                    <a href="tel:+12345678900" class="text-decoration-none text-light">Toll Free: +123-4567-8900</a>
+                <div class="hotlineNumber px-3">Toll Free :&nbsp;
+                    <a href="tel:+12345678900" class="text-decoration-none text-light"> +123-4567-8900</a>
                 </div>
             </div>
             <div class="col-md-6 justify-content-end">
@@ -56,9 +56,9 @@
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <img src="./img/logo.png" class="navbar-brand" href="#">
+            <img src="./img/logo.png" class="navbar-brand" href="./index.html">
             <button class="navbar-toggler navbar-toggler-right" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -71,9 +71,11 @@
                     <li class="nav-item"><a class="nav-link active" href="#">Blog</a></li>
                     <li class="nav-item"><a class="nav-link active" href="#">Contact</a></li>
                 </ul>
-                <form class="my-2 my-lg-0 d-flex gap-4">
-                    <a href=""><i class="fa fa-search text-dark"></i></a>
-                    <a href="" class="text-decoration-none text-danger"> <i class="fa fa-shopping-bag"></i> 2 Items</a>
+                <form class="input-group my-2 my-lg-0">
+                    <input type="search" class="form-control bg-transparent" placeholder="Search here">
+                    <button type="submit" class="submit input-group-text"><i class="fa fa-search"></i></button>
+
+                    <a href="" class="ms-4 mt-1 text-decoration-none text-danger"> <i class="fa fa-shopping-bag"></i> 2 Items</a>
                 </form>
             </div>
         </div>
@@ -343,9 +345,8 @@
 
     <footer class="footer bg-dark">
         <div class="container">
-            <div class="row text-light">
-
-                <div class="py-5 col-12 col-md-6 col-lg-3 aboutArea">
+            <div class="row text-light py-5">
+                <div class="col-12 col-md-6 col-lg-3 aboutArea">
                     <img src="./img/footerLogo.png" alt="logo image">
                     <p class="lead mt-4">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ad veniam tenetur pariatur.
@@ -355,7 +356,7 @@
                     <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab consectetur aspernatur
                         vitae. Distinctio.</p>
                 </div>
-                <div class="py-5 col-12 col-md-6 col-lg-3 contactUs">
+                <div class="col-12 col-md-6 col-lg-3 contactUs d-grid align-items-center">
                     <div class="subTitle">Contact us</div>
                     <div class="p"><i class="fa-solid fa-location-dot"></i> 1234, Parkstreet Avenue, NewYork</div>
                     <div class="p"><i class="fa-solid fa-phone"></i>
@@ -373,7 +374,7 @@
                             href="http://www.e-buy.com">www.e-buy.com</a>, <a
                             href="http://www.infobuy.com">www.infobuy.com</a></div>
                 </div>
-                <div class="py-5 col-12 col-md-4 col-lg-2 myAccount">
+                <div class="col-12 col-md-4 col-lg-2 myAccount d-grid align-items-center">
                     <div class="subTitle">my account</div>
                     <li><a href="#">My Account</a></li>
                     <li><a href="#">Wishlist</a></li>
@@ -381,7 +382,7 @@
                     <li><a href="#">Compare</a></li>
                     <li><a href="#">Checkout</a></li>
                 </div>
-                <div class="py-5 col-12 col-md-8 col-lg-4 signUp">
+                <div class="col-12 col-md-8 col-lg-4 signUp d-grid align-items-center">
                     <div class="subTitle">Sign Up For Newsletter</div>
 
                     <form class="input-group">
@@ -399,6 +400,10 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="text-center bg-secondary text-light py-3">
+            Copyright &copy; 2022 | <a href="http://https://techmainul-dev.github.io/onlineshop/">Mainul Hasan Khan</a>
         </div>
     </footer>
 
