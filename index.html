@@ -10,7 +10,6 @@
     <link rel="icon" href="https://cdn.icon-icons.com/icons2/2596/PNG/512/check_one_icon_155665.png">
     <meta name="author" content="Mainul Hasan Khan">
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 
@@ -103,25 +102,25 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 productsDetails">
-                    <div class="card bg-info">
-                        <div class="card-header">
+                    <div class="card border-0">
+                        <div class="card-header bg-transparent">
                             <div class="card-title">Rose with multiple color</div>
                             <div class="reviewArea">
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star"></span>
                                 | (<span class="reviewsQty">124</span>Reviews)
                             </div>
                             <div class="price">$99.00</div>
-                            <div class="productAbout">
+                            <p class="productAbout mt-3">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                 incididunt ut labore agna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                                 ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor in
                                 reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
                                 sint occaecat.
-                            </div>
+                            </p>
                         </div>
                         <div class="card-body w-75">
                             <div class="productChoose">
@@ -145,17 +144,27 @@
                                                     </label>
                                                 </td>
                                             </tr>
-                                            <tr class="">
+                                            <tr class="quantitySelection">
                                                 <th scope="row">Quantity</th>
-                                                <td>: 1</td>
+                                                <td class="d-flex">
+                                                    <div class="collon ms-1">:</div>
+                                                    <div class="border border-dark border-end-0 ms-1">
+                                                        <div class="qty">1</div>
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="inc hover"><i class="fa-solid fa-plus"></i></div>
+                                                        <div class="dec hover"><i class="fa-solid fa-minus"></i>
+                                                        </div>
+                                                    </div>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="productEmotions">
-                                    <i class="fa fa-heart"></i>
-                                    <i class="fa fa-equals"></i>
-                                    <i class="fa fa-cart-plus"></i>
+                                <div class="productEmotions py-3">
+                                    <i class="hover fa fa-heart"></i>
+                                    <i class="hover fa fa-equals"></i>
+                                    <i class="hover fa fa-cart-plus"></i>
                                 </div>
                                 <div class="productSpec">
                                     <table class="table">
@@ -177,27 +186,230 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-footer">
+                        <div class="card-footer bg-transparent">
+                            <h3 class="mt-1">Share in:</h3>
                             <div class="socialMediaArea">
-
+                                <i class="hover fa-brands fa-facebook-f"></i>
+                                <i class="hover fa-brands fa-twitter"></i>
+                                <i class="hover fa-brands fa-behance"></i>
+                                <i class="hover fa-brands fa-linkedin-in"></i>
+                                <i class="hover fa-brands fa-pinterest-p"></i>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="title py-5">
+                    <h2><span class="text-danger">Description</span> | Reviews</h2>
+                </div>
+                <p class="lead">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occacat cupidatat non proident, sunt in culpa
+                    qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste.
+
+                </p>
+                <p class="lead">
+                    natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                    illo inventore veritatis et quasi architecto beatae vitae dicta sunt explibo. Nemo enim ipsam
+                    voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+                    qui ratione voluptatem sequi nesciunt. Neque porro quam est, qui dolorem ipsum quia dolor sit amet,
+                    consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+                    magnam aliquam quaerat voluptatem.natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                    sed quia.
+                </p>
+            </div>
         </div>
     </section>
 
+    <section id="latestProduct" class="latestProduct">
+        <div class="container">
+            <h1 class="title text-capitalize">Latest product</h1>
+
+            <div class="row mx-auto my-auto justify-content-center">
+                <div id="recipeCarousel" class="carousel slide my-5" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./img/productOne_1.jpg">
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="info d-flex justify-content-between">
+                                            <h4 class="name">Red rose</h4>
+                                            <h5 class="price">$99.00</h5>
+                                        </div>
+                                        <div class="reviewArea">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked-50"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./img/productOne_2.jpg">
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="info d-flex justify-content-between">
+                                            <h4 class="name">Yellow flower</h4>
+                                            <h5 class="price">$99.00</h5>
+                                        </div>
+                                        <div class="reviewArea">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked-50"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./img/productOne_3.jpg">
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="info d-flex justify-content-between">
+                                            <h4 class="name">Red Flower</h4>
+                                            <h5 class="price">$99.00</h5>
+                                        </div>
+                                        <div class="reviewArea">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked-50"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-img">
+                                        <img src="./img/productOne_4.jpg">
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="info d-flex justify-content-between">
+                                            <h4 class="name">Nature</h4>
+                                            <h5 class="price">$99.00</h5>
+                                        </div>
+                                        <div class="reviewArea">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked-50"></span>
+                                            <span class="fa fa-star"></span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#recipeCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+
+        </div>
+    </section>
+
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="row text-light">
+
+                <div class="py-5 col-12 col-md-6 col-lg-3 aboutArea">
+                    <img src="./img/footerLogo.png" alt="logo image">
+                    <p class="lead mt-4">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ad veniam tenetur pariatur.
+                        Officia beatae ducimus veritatis, provident deleniti vel harum cupiditate consectetur nisi
+                        fugit.
+                    </p>
+                    <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab consectetur aspernatur
+                        vitae. Distinctio.</p>
+                </div>
+                <div class="py-5 col-12 col-md-6 col-lg-3 contactUs">
+                    <div class="subTitle">Contact us</div>
+                    <div class="p"><i class="fa-solid fa-location-dot"></i> 1234, Parkstreet Avenue, NewYork</div>
+                    <div class="p"><i class="fa-solid fa-phone"></i>
+                        <a href="tel:+12345678900" class="text-decoration-none text-light">
+                            +123-4567-8900</a>,
+                        <a href="tel:+00945674321" class="text-decoration-none text-light">
+                            +009-4567-4321</a>
+                    </div>
+                    <div class="p"><i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:your@gmail.com">info@e-buy.com</a>,
+                        <a href="mailto:your@gmail.com">
+                            e-buy@info.com</a>
+                    </div>
+                    <div class="p"><i class="fa-solid fa-earth-americas"></i><a
+                            href="http://www.e-buy.com">www.e-buy.com</a>, <a
+                            href="http://www.infobuy.com">www.infobuy.com</a></div>
+                </div>
+                <div class="py-5 col-12 col-md-4 col-lg-2 myAccount">
+                    <div class="subTitle">my account</div>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Wishlist</a></li>
+                    <li><a href="#">Shopping Cart</a></li>
+                    <li><a href="#">Compare</a></li>
+                    <li><a href="#">Checkout</a></li>
+                </div>
+                <div class="py-5 col-12 col-md-8 col-lg-4 signUp">
+                    <div class="subTitle">Sign Up For Newsletter</div>
+
+                    <form class="input-group">
+                        <input type="email" class="form-control bg-transparent" placeholder="Your E-mail">
+                        <button type="submit" class="submit input-group-text bg-danger">Submit</button>
+                    </form>
+
+                    <div class="subTitle mt-3">Follow me on</div>
+                    <div class="socialMediaArea">
+                        <i class="hover fa-brands fa-facebook-f"></i>
+                        <i class="hover fa-brands fa-twitter"></i>
+                        <i class="hover fa-brands fa-behance"></i>
+                        <i class="hover fa-brands fa-linkedin-in"></i>
+                        <i class="hover fa-brands fa-pinterest-p"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
 
 
 
-
-
-
+    <script src="https://kit.fontawesome.com/26cf054593.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
