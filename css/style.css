@@ -11,6 +11,10 @@ h3, th, .subTitle {
   font-size: 16px;
 }
 
+.test {
+  display: grid;
+}
+
 .subTitle {
   text-transform: uppercase;
   font-weight: bold;
@@ -64,12 +68,36 @@ header i {
 nav .navbar-brand {
   cursor: pointer;
 }
-nav .nav-link {
-  border-radius: 10px 0;
+nav .navbar-nav {
+  position: relative;
 }
-nav .nav-link:hover {
-  background-color: brown !important;
-  color: #fff !important;
+nav .nav-item a {
+  position: relative;
+}
+nav .nav-item a::after, nav .nav-item a::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: brown;
+  left: 10px;
+  opacity: 0;
+  transition: 0.5s;
+}
+nav .nav-item a::after {
+  width: 40px;
+  bottom: 2px;
+}
+nav .nav-item a:hover:after, nav .nav-item .navActive::after {
+  opacity: 1;
+  width: calc(100% - 20px);
+}
+nav .nav-item a::before {
+  width: 0;
+  bottom: -4px;
+}
+nav .nav-item a:hover::before, nav .nav-item .navActive::before {
+  opacity: 1;
+  width: calc(100% - 37px);
 }
 nav form {
   width: 40% !important;
@@ -122,6 +150,10 @@ nav form {
 .productArea .productImages .secondaryImages img:nth-child(3) {
   border: 1px solid green;
 }
+.productArea .productsDetails .card .card-header .card-title {
+  font-size: 24px;
+  font-weight: 500;
+}
 .productArea .productsDetails .card .card-header .reviewArea, .productArea .productsDetails .card .card-header .price {
   font-size: 16px;
 }
@@ -154,6 +186,9 @@ nav form {
 }
 .productArea .productsDetails .card .card-body .table-responsive .quantitySelection .inc {
   border-bottom: 1px solid transparent;
+}
+.productArea .productsDetails .card .card-body .table-responsive .quantitySelection input[type=number]::-webkit-inner-spin-button::after {
+  -webkit-appearance: none;
 }
 .productArea .productsDetails .card .card-body .productEmotions i {
   width: 50px;
@@ -192,7 +227,6 @@ nav form {
   display: flex;
 }
 
-/* medium and up screens */
 @media (min-width: 768px) {
   .carousel-inner .carousel-item-end.active,
 .carousel-inner .carousel-item-next {
@@ -235,7 +269,7 @@ footer .signUp .submit {
 footer .signUp .socialMediaArea i {
   background-color: #fff;
   color: black;
-  margin-right: 30px;
+  margin: 20px 20px 0 0;
 }
 
 .hover {

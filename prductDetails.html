@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Home</title>
+    <title>Product details</title>
     <link rel="icon" href="https://cdn.icon-icons.com/icons2/2596/PNG/512/check_one_icon_155665.png">
     <meta name="author" content="Mainul Hasan Khan">
 
@@ -58,27 +58,24 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a href="./index.html">
-                <img src="./img/logo.png" class="navbar-brand">
-            </a>
+            <img src="./img/logo.png" class="navbar-brand" href="./index.html">
             <button class="navbar-toggler navbar-toggler-right" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div id="navbarNav" class="collapse navbar-collapse menu">
+            <div id="navbarNav" class="collapse navbar-collapse">
                 <ul class="navbar-nav m-auto">
-                    <li class="nav-item"><a class="nav-link navActive" href="./index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" onclick="test();">Men</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Women</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Accessories</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Men</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Women</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Accessories</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Contact</a></li>
                 </ul>
-                <form class="input-group my-2 my-lg-0 d-flex">
-                    <input type="search" class="form-control bg-transparent invisible" placeholder="Search here">
-                    <button type="submit" class="input-group-text ms-auto py-2"><i class="fa fa-search"></i></button>
+                <form class="input-group my-2 my-lg-0">
+                    <input type="search" class="form-control bg-transparent" placeholder="Search here">
+                    <button type="submit" class="submit input-group-text"><i class="fa fa-search"></i></button>
 
-                    <a href="" class="ms-4 mt-1 text-decoration-none text-danger"> <i class="fa fa-shopping-bag"></i> 2
-                        Items</a>
+                    <a href="" class="ms-4 mt-1 text-decoration-none text-danger"> <i class="fa fa-shopping-bag"></i> 2 Items</a>
                 </form>
             </div>
         </div>
@@ -119,7 +116,7 @@
                                 | (<span class="reviewsQty">124</span>Reviews)
                             </div>
                             <div class="price">$99.00</div>
-                            <p class="productAbout mt-2">
+                            <p class="productAbout mt-3">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                 incididunt ut labore agna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                                 ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor in
@@ -152,13 +149,14 @@
                                             <tr class="quantitySelection">
                                                 <th scope="row">Quantity</th>
                                                 <td class="d-flex">
-                                                    <div class="collon mx-1">:</div>
-                                                    <div class="border border-dark border-end-0">
+                                                    <div class="collon ms-1">:</div>
+                                                    <div class="border border-dark border-end-0 ms-1">
                                                         <div class="qty">1</div>
                                                     </div>
                                                     <div class="">
                                                         <div class="inc hover"><i class="fa-solid fa-plus"></i></div>
-                                                        <div class="dec hover"><i class="fa-solid fa-minus"></i></div>
+                                                        <div class="dec hover"><i class="fa-solid fa-minus"></i>
+                                                        </div>
                                                     </div>
                                                 </td>
                                             </tr>
@@ -348,10 +346,8 @@
     <footer class="footer bg-dark">
         <div class="container">
             <div class="row text-light py-5">
-                <div class="col-12 mb-4 px-3 col-md-6  col-lg-3 mb-lg-0 aboutArea">
-                    <a href="./index.html">
-                        <img src="./img/footerLogo.png" alt="logo image">
-                    </a>
+                <div class="col-12 col-md-6 col-lg-3 aboutArea">
+                    <img src="./img/footerLogo.png" alt="logo image">
                     <p class="lead mt-4">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ad veniam tenetur pariatur.
                         Officia beatae ducimus veritatis, provident deleniti vel harum cupiditate consectetur nisi
@@ -360,7 +356,7 @@
                     <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab consectetur aspernatur
                         vitae. Distinctio.</p>
                 </div>
-                <div class="col-12 mb-4 px-3 col-md-6  col-lg-3 mb-lg-0 contactUs d-grid align-items-center">
+                <div class="col-12 col-md-6 col-lg-3 contactUs d-grid align-items-center">
                     <div class="subTitle">Contact us</div>
                     <div class="p"><i class="fa-solid fa-location-dot"></i> 1234, Parkstreet Avenue, NewYork</div>
                     <div class="p"><i class="fa-solid fa-phone"></i>
@@ -378,7 +374,7 @@
                             href="http://www.e-buy.com">www.e-buy.com</a>, <a
                             href="http://www.infobuy.com">www.infobuy.com</a></div>
                 </div>
-                <div class="col-12 mb-4 px-3 col-md-4 mb-md-0  col-lg-2 myAccount d-grid align-items-center">
+                <div class="col-12 col-md-4 col-lg-2 myAccount d-grid align-items-center">
                     <div class="subTitle">my account</div>
                     <li><a href="#">My Account</a></li>
                     <li><a href="#">Wishlist</a></li>
@@ -386,7 +382,7 @@
                     <li><a href="#">Compare</a></li>
                     <li><a href="#">Checkout</a></li>
                 </div>
-                <div class="col-12 mb-4 px-3 col-md-8 mb-md-0  col-lg-4 signUp d-grid align-items-center">
+                <div class="col-12 col-md-8 col-lg-4 signUp d-grid align-items-center">
                     <div class="subTitle">Sign Up For Newsletter</div>
 
                     <form class="input-group">

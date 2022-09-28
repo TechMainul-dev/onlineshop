@@ -13,3 +13,12 @@ items.forEach((el) => {
         next = next.nextElementSibling;
     }
 });
+
+
+
+document.querySelector('nav form button').addEventListener('click', function (event) {
+    event.preventDefault();
+    var target = document.querySelector('nav form input');
+    
+    target.classList.toggle('invisible');
+});
