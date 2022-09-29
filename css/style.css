@@ -48,6 +48,16 @@ p, td, .lead {
   border: 1px solid black;
 }
 
+.productEmotions i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 26px;
+  border: 1px solid black;
+  margin-right: 5px;
+}
+
 header {
   max-height: 50px;
 }
@@ -190,15 +200,6 @@ nav form {
 .productArea .productsDetails .card .card-body .table-responsive .quantitySelection input[type=number]::-webkit-inner-spin-button::after {
   -webkit-appearance: none;
 }
-.productArea .productsDetails .card .card-body .productEmotions i {
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  font-size: 26px;
-  border: 1px solid black;
-  margin-right: 5px;
-}
 .productArea .productsDetails .card .card-body .productSpec td {
   color: rgba(0, 0, 0, 0.6);
 }
@@ -211,6 +212,28 @@ nav form {
   height: 350px !important;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.latestProduct #recipeCarousel .card-img .gly_overlay {
+  width: 40%;
+  margin-left: 60%;
+  height: 350px !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  color: #fff;
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+.latestProduct #recipeCarousel .card-img .gly_overlay .productEmotions i {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  padding: 5px;
+  line-height: 42px;
+}
+.latestProduct #recipeCarousel .card-img :hover .gly_overlay {
+  display: flex;
 }
 
 @media (max-width: 767px) {
